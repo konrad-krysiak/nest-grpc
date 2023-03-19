@@ -10,6 +10,15 @@ To generate types from protobuf schema file automatically use ts-proto library.
 docker-compose up
 ```
 
+## Demo
+
+Use your favourite HTTP client and POST array of numbers to localhost:3000. Function returns sum of square items of this array.
+
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{"data": [1,2,33]}' http://localhost:3000
+
+```
+
 ## References
 
 - [ts-proto](https://github.com/stephenh/ts-proto)
