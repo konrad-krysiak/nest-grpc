@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package math;
+
+service MathService {
+  rpc SquareSumArray (ArrayOfNumbers) returns (SquareSum);
+}
+
+message ArrayOfNumbers {
+  repeated int32 data = 1;
+}
+
+message SquareSum {
+  int32 sum = 1;
+}
